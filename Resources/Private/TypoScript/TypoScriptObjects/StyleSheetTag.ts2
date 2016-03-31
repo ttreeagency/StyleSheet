@@ -1,0 +1,12 @@
+prototype(Ttree.StyleSheet:StyleSheetTag) >
+prototype(Ttree.StyleSheet:StyleSheetTag) < prototype(TypoScript:Tag) {
+    @context.path = ${this.path}
+    tagName = 'link'
+    selfClosingTag = TRUE
+    attributes {
+        rel = 'stylesheet'
+        href = TypoScript:ResourceUri {
+            path = ${path}
+        }
+    }
+}

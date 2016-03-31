@@ -1,0 +1,19 @@
+{
+  "name": "ttree/stylesheet",
+  "type": "typo3-flow-package",
+  "license": "MIT",
+  "description": "TypoScript object to generate a link tag",
+  "keywords": [
+    "typoscript",
+    "stylesheet",
+    "asset"
+  ],
+  "require": {
+    "typo3/typoscript": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ttree\\StyleSheet\\": "Classes"
+    }
+  }
+}
