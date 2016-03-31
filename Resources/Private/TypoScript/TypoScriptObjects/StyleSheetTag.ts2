@@ -1,4 +1,3 @@
-prototype(Ttree.StyleSheet:StyleSheetTag) >
 prototype(Ttree.StyleSheet:StyleSheetTag) < prototype(TypoScript:Tag) {
     @context.path = ${this.path}
     tagName = 'link'
