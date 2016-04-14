@@ -7,12 +7,21 @@ This package contains TypoScript objects to work with StyleSheets in your Flow F
 
 ## Available Objects
 
-### Ttree.StyleSheet:StyleSheetTag
+### Ttree.StyleSheet:Resource
 
 Generate a HTML link element in HTML5:
 
-    stylesheets.main = Ttree.StyleSheet:StyleSheetTag {
-        path = 'resource://Your.Package/Public/Styles/Main.css'
+    stylesheets.main = Ttree.StyleSheet:Resource {
+        uri = 'resource://Your.Package/Public/Styles/Main.css'
+    }
+
+
+### Ttree.StyleSheet:External
+
+Generate a HTML link element in HTML5:
+
+    stylesheets.main = Ttree.StyleSheet:External {
+        uri = 'http://www.domain.com/main.css'
     }
 
 ## Acknowledgments

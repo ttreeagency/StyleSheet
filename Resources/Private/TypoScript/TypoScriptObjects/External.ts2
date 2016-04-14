@@ -1,0 +1,9 @@
+prototype(Ttree.StyleSheet:External) < prototype(TypoScript:Tag) {
+    @context.uri = ${this.uri}
+    tagName = 'link'
+    selfClosingTag = TRUE
+    attributes {
+        rel = 'stylesheet'
+        href = ${uri}
+    }
+}
