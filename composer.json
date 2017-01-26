@@ -9,7 +9,7 @@
         "asset"
     ],
     "require": {
-        "neos/fusion": "*"
+        "neos/fusion": "^3.0.0 || 3.0.x-dev || dev-master"
     },
     "autoload": {
         "psr-4": {
