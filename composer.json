@@ -1,24 +1,27 @@
 {
-  "name": "ttree/stylesheet",
-  "type": "typo3-flow-package",
-  "license": "MIT",
-  "description": "TypoScript object to generate a link tag",
-  "keywords": [
-    "typoscript",
-    "stylesheet",
-    "asset"
-  ],
-  "require": {
-    "typo3/typoscript": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Ttree\\StyleSheet\\": "Classes"
+    "name": "ttree/stylesheet",
+    "type": "typo3-flow-package",
+    "license": "MIT",
+    "description": "TypoScript object to generate a link tag",
+    "keywords": [
+        "typoscript",
+        "stylesheet",
+        "asset"
+    ],
+    "require": {
+        "typo3/typoscript": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ttree\\StyleSheet\\": "Classes"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Ttree.StyleSheet"
+        },
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
-  },
-  "extra": {
-    "neos": {
-      "package-key": "Ttree.StyleSheet"
-    }
-  }
 }
