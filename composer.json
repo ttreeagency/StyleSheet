@@ -1,6 +1,6 @@
 {
     "name": "ttree/stylesheet",
-    "type": "typo3-flow-package",
+    "type": "neos-package",
     "license": "MIT",
     "description": "TypoScript object to generate a link tag",
     "keywords": [
@@ -9,7 +9,7 @@
         "asset"
     ],
     "require": {
-        "typo3/typoscript": "*"
+        "neos/fusion": "*"
     },
     "autoload": {
         "psr-4": {
