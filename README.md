@@ -3,7 +3,7 @@
 
 # StyleSheet TS Objects
 
-This package contains TypoScript objects to work with StyleSheets in your Flow Framework and Neos CMS project.
+This package contains Fusion objects to work with StyleSheets in your Flow Framework and Neos CMS project.
 
 ## Available Objects
 
