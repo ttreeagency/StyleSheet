@@ -1,5 +1,6 @@
-TYPO3:
+
+Neos:
   Neos:
     typoScript:
       autoInclude:
-        'Ttree.StyleSheet': TRUE
+        Ttree.StyleSheet: true
