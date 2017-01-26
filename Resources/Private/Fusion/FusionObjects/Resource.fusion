@@ -1,10 +1,10 @@
-prototype(Ttree.StyleSheet:Resource) < prototype(TypoScript:Tag) {
+prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
     @context.uri = ${this.uri}
     tagName = 'link'
     selfClosingTag = TRUE
     attributes {
         rel = 'stylesheet'
-        href = TypoScript:ResourceUri {
+        href = Fusion:ResourceUri {
             path = ${uri}
         }
     }

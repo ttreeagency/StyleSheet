@@ -1,4 +1,4 @@
-prototype(Ttree.StyleSheet:External) < prototype(TypoScript:Tag) {
+prototype(Ttree.StyleSheet:External) < prototype(Fusion:Tag) {
     @context.uri = ${this.uri}
     tagName = 'link'
     selfClosingTag = TRUE
