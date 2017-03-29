@@ -2,9 +2,11 @@
     "name": "ttree/stylesheet",
     "type": "neos-package",
     "license": "MIT",
-    "description": "TypoScript object to generate a link tag",
+    "description": "Fusion object to generate a link tag",
     "keywords": [
-        "typoscript",
+        "neoscms",
+	"flow-framework",
+	"fusion",
         "stylesheet",
         "asset"
     ],
