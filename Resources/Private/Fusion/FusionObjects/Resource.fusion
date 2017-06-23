@@ -1,11 +1,21 @@
 prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
     @context.uri = ${this.uri}
+
     tagName = 'link'
     selfClosingTag = TRUE
+
+    cacheBusting = true
+    @context.cacheBusting = ${this.cacheBusting}
+
     attributes {
+        @context.hash = Ttree.Fusion.HashFile:Process {
+            resource = ${uri}
+        }
+
         rel = 'stylesheet'
         href = Fusion:ResourceUri {
             path = ${uri}
+            @process.cacheBusting = ${cacheBusting ? value + '?' + hash : value}
         }
     }
 }

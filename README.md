@@ -13,8 +13,10 @@ Generate a HTML link element in HTML5:
 
     stylesheets.main = Ttree.StyleSheet:Resource {
         uri = 'resource://Your.Package/Public/Styles/Main.css'
+        cacheBusting = true
     }
 
+You can disable HTTP cache busting by setting ```cacheBusting``` to ```false```.
 
 ### Ttree.StyleSheet:External
 
