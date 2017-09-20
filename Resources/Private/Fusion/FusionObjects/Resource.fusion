@@ -1,8 +1,12 @@
 prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
     @context.uri = ${this.uri}
 
-    tagName = 'link'
-    selfClosingTag = TRUE
+    tagName = ${this.inline == true ? 'style' : 'link'}
+
+    selfClosingTag = ${this.inline == true ? false : true}
+
+	inline = false
+	@context.inline = ${this.inline}
 
     cacheBusting = true
     @context.cacheBusting = ${this.cacheBusting}
@@ -17,5 +21,10 @@ prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
             path = ${uri}
             @process.cacheBusting = ${cacheBusting ? value + '?' + hash : value}
         }
+
+		@if.notInline = ${inline != true}
     }
+
+	content = ${FileReader.get(uri)}
+	content.@if.inline = ${inline == true}
 }
