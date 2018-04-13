@@ -1,4 +1,4 @@
-prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
+prototype(Ttree.StyleSheet:Resource) < prototype(Neos.Fusion:Tag) {
     @context.uri = ${this.uri}
 
     tagName = ${this.inline == true ? 'style' : 'link'}
@@ -12,17 +12,17 @@ prototype(Ttree.StyleSheet:Resource) < prototype(Fusion:Tag) {
     @context.cacheBusting = ${this.cacheBusting}
 
     attributes {
-        @context.hash = Ttree.Fusion.HashFile:Process {
-            resource = ${uri}
-        }
+      @context.hash = Ttree.Fusion.HashFile:Process {
+          resource = ${uri}
+      }
 
-        rel = 'stylesheet'
-        href = Fusion:ResourceUri {
-            path = ${uri}
-            @process.cacheBusting = ${cacheBusting ? value + '?' + hash : value}
-        }
+      rel = 'stylesheet'
+      href = Neos.Fusion:ResourceUri {
+          path = ${uri}
+          @process.cacheBusting = ${cacheBusting ? value + '?' + hash : value}
+      }
 
-		@if.notInline = ${inline != true}
+	    @if.notInline = ${inline != true}
     }
 
 	content = ${FileReader.get(uri)}

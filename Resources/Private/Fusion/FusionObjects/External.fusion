@@ -1,4 +1,4 @@
-prototype(Ttree.StyleSheet:External) < prototype(Fusion:Tag) {
+prototype(Ttree.StyleSheet:External) < prototype(Neos.Fusion:Tag) {
     @context.uri = ${this.uri}
     tagName = 'link'
     selfClosingTag = TRUE
