@@ -1,9 +1,9 @@
 [![BSD License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Latest Stable Version](https://poser.pugx.org/ttree/stylesheet/version)](https://packagist.org/packages/ttree/stylesheet)
 
-# StyleSheet TS Objects
+# StyleSheet Fusion Prototypes
 
-This package contains Fusion objects to work with StyleSheets in your Flow Framework and Neos CMS project.
+This package contains Fusion prototypes to work with StyleSheets in your Flow Framework and Neos CMS project.
 
 ## Available Objects
 
