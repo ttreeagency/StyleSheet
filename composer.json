@@ -11,9 +11,9 @@
         "asset"
     ],
     "require": {
-        "neos/fusion": "^3.0",
-        "ttree/fusion-hashfile": "^1.0",
-        "ttree/eel-filereader": "^1.0"
+        "neos/fusion": "~3.0 || ~4.0",
+        "ttree/fusion-hashfile": "~1.0",
+        "ttree/eel-filereader": "~1.0"
     },
     "autoload": {
         "psr-4": {
